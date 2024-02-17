@@ -69,7 +69,7 @@ vim.opt.foldenable = true
 vim.opt.scrolloff = 8
 
 -- Place a column line
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "101"
 
 vim.opt.guicursor = {
   "n-v-c:block",                                  -- Normal, visual, command-line: block cursor
