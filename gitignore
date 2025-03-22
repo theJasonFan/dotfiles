@@ -1,0 +1,10 @@
+# Personal conventions
+.DS_Store
+.vscode/
+*.bk
+**/tmp/
+**/temp/
+**/__pycache__/
+
+*.nextflow.log*
+
