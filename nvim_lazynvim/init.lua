@@ -13,6 +13,8 @@ vim.filetype.add({
 
 -- Open a dir and make it the working directory
 vim.g.root_spec = { "cwd" }
+
+-- FIXME: this doesn't work eyt.
 -- Hot patch nvim-lspconfig to add Nextflow language server
 
 -- local nf_ls_jar = "/Users/jf/.bin/nf-language-server/build/libs/language-server-all.jar"
