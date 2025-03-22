@@ -33,14 +33,16 @@ return {
       })
 
       -- Configure mason to auto install servers
-      require("mason-lspconfig").setup()
+      require("mason-lspconfig").setup {
+        ensure_installed = { "rust_analyzer" }
+      }
 
       -- LSP servers to install (see list here: https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers )
       local servers = {
         bashls = {},
         -- clangd = {},
-        html = {},
-        jsonls = {},
+        -- html = {},
+        -- jsonls = {},
         lua_ls = {
           settings = {
             Lua = {
@@ -51,7 +53,9 @@ return {
         },
         -- pyright = {},
         ruff_lsp = {},
-        yamlls = {},
+        -- yamlls = {},
+        rust_analyzer = {}
+
       }
 
       -- Default handlers for LSP
